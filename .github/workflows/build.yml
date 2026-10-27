@@ -20,5 +20,10 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Setup Gradle
+        uses: gradle/actions-setup@v3
+        with:
+          gradle-version: '8.8'
+
       - name: Build with Gradle
         run: gradle build
